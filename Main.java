@@ -5,6 +5,13 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
+ //2
+
+       CarsRentalAgency cars = new CarsRentalAgency();
+       cars.rentACars();
+       cars.returnACars("Yosi","Picanto");
+
+//5
      MallRepo mall = new MallRepo("jdbc:sqlite:C:\\Users\\yelena\\MALL.db");
 
         mall.select("SELECT * FROM STORIES");

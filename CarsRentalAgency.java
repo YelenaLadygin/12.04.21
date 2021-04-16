@@ -15,6 +15,24 @@ public class CarsRentalAgency {
     protected HashMap<String,Float> rentHourlyFee = new HashMap<>();
     float income ;
 
+    public CarsRentalAgency() {
+        cars.add("Picanto");
+        cars.add("RIO");
+        cars.add("Forte");
+        cars.add("Sportage");
+        cars.add("Optima");
+        workers.add("Yosi");
+        workers.add("Yelena");
+        customers.add ("AA");
+        customers.add ("BB");
+        customers.add ("CC");
+        rentHourlyFee.put("Picanto",15f);
+        rentHourlyFee.put("RIO",20f);
+        rentHourlyFee.put("Forte",25f);
+        rentHourlyFee.put("Sportage",30f);
+        rentHourlyFee.put("Optima",35f);
+    }
+
     public  void rentACars () {
         if (customers.isEmpty()) {
             System.out.println("No customers waiting");
